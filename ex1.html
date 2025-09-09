@@ -36,8 +36,8 @@
                 if (!email.includes("@")){
                     errorMessages += "\n Email must contain the character @.";
                 }
-                if (password === ""){
-                    errorMessages += "\n Password must be non-empty";
+                if (password === "" || password == null){
+                    errorMessages += "\n Password must be non-empty.";
                 }
 
                 if (errorMessages.length>0){
